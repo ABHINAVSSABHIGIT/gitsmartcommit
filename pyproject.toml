@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitsmartcommit"
+version = "0.1.0"
+description = "Smart commit message generator from git diff"
+readme = "README.md"
+requires-python = ">=3.6"
+
+[project.scripts]
+smartcommit = "gitsmartcommit.git:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

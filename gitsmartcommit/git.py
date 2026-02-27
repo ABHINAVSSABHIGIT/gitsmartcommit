@@ -1,13 +1,9 @@
-# Modified main.py
 import os
 import sys
 import re
 import subprocess
 import argparse
-if sys.version_info >= (3, 7):
-    from .generate_commit_message import generate_commit_message, _pick_tag
-else:
-    from generate_commit_message import generate_commit_message, _pick_tag
+from .generate_commit_message import generate_commit_message, _pick_tag
 
 
 def check_git_repo(path: str) -> bool:
